@@ -1,6 +1,5 @@
 {
   "doNotPublishApps": true,
-  "$schema": "https://raw.githubusercontent.com/BusinessCentralApps/tmpSUtfAh-Actions/main/settings.schema.json",
   "UseProjectDependencies": true,
   "incrementalBuilds": {
     "onPush": true
@@ -26,5 +25,6 @@
       ]
     }
   ],
-  "useApproximateVersion": true
+  "useApproximateVersion": true,
+  "$schema": "https://raw.githubusercontent.com/BusinessCentralApps/tmpSUtfAh-Actions/main/settings.schema.json"
 }
