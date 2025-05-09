@@ -1,0 +1,30 @@
+{
+  "doNotPublishApps": true,
+  "$schema": "https://raw.githubusercontent.com/BusinessCentralApps/tmpSUtfAh-Actions/main/settings.schema.json",
+  "UseProjectDependencies": true,
+  "incrementalBuilds": {
+    "onPush": true
+  },
+  "runs-on": "ubuntu-latest",
+  "type": "PTE",
+  "githubRunner": "ubuntu-latest",
+  "githubRunnerShell": "pwsh",
+  "templateUrl": "https://github.com/BusinessCentralApps/tmpSUtfAh-PTE@main",
+  "useCompilerFolder": true,
+  "shell": "pwsh",
+  "MicrosoftTelemetryConnectionString": "",
+  "conditionalSettings": [
+    {
+      "settings": {
+        "workflowConcurrency": [
+          "group: ${{ github.workflow }}-${{ github.ref }}",
+          "cancel-in-progress: true"
+        ]
+      },
+      "workflows": [
+        "CI/CD"
+      ]
+    }
+  ],
+  "useApproximateVersion": true
+}
